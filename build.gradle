@@ -1,0 +1,41 @@
+group 'com.srcclr'
+version '1.0-SNAPSHOT'
+
+plugins {
+  id "com.srcclr.gradle" version "3.1.0"
+}
+  
+srcclr {
+  apiToken = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZWFtSWQiOiIxNzI5MCIsInNjb3BlIjpbXSwiaWQiOjY4ODI2LCJleHAiOjE1NTk3OTg4MzMsImF1dGhvcml0aWVzIjoiQUdFTlQiLCJvcmdJZCI6IjE5MjciLCJqdGkiOiI3NzFhMmJkYS00N2YzLTQ3ZmQtYjJjMC03MTE1NDc0MzdhZGMiLCJjbGllbnRfaWQiOiIifQ.jYf4KH356iF2ev_CF9nFn-Y2LGJyn9uRtnoJWO5HF1DnoL7LU7luL9oirUcnLT2mcuAJ3QZ1jdDdL_d3fpqyCyDHJFJG74d1WAqUio0iDoQCWXjQGMkeCxrW2E6tb4v-_Cf4uwn6B84QdcM0gEkdlV0_q6Vn67VlNw6Sl_S6U_Y" // required field
+}
+
+./gradlew srcclr
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+compileJava {
+    options.fork = true
+}
+
+dependencies {
+    compile group: 'com.orientechnologies', name: 'orientdb-server', version: '3.0.6'
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.2.2'
+    compile group: 'commons-fileupload', name: 'commons-fileupload', version: '1.3.3'
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+    compile group: 'net.bull.javamelody', name: 'javamelody-core', version: '1.74.0'
+    compile group: 'org.apache.kafka', name: 'kafka_2.11', version: '2.0.1'
+    compile group: 'org.apache.kafka', name: 'kafka-clients', version: '2.0.1'
+    compile group: 'org.apache.sling', name: 'org.apache.sling.api', version: '2.2.0'
+    compile group: 'org.apache.sling', name: 'org.apache.sling.engine', version: '2.3.8'
+    compile group: 'org.apache.zookeeper', name: 'zookeeper', version: '3.5.4-beta'
+    compile group: 'org.keycloak', name: 'keycloak-saml-core', version: '4.5.0.Final'
+    compile group: 'org.mindrot', name: 'jbcrypt', version: '0.4'
+    compile group: 'org.neo4j', name: 'neo4j-jmx', version: '3.0.0-M05'
+    compile group: 'org.springframework', name: 'spring-web', version: '4.2.1.RELEASE'
+}
+
+defaultTasks 'build'
