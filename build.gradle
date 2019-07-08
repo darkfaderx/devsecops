@@ -1,6 +1,16 @@
 group 'com.srcclr'
 version '1.0-SNAPSHOT'
 
+plugins {
+  id "com.srcclr.gradle" version "3.1.0"
+}
+  
+srcclr {
+  apiToken = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZWFtSWQiOiIxNzI5MCIsInNjb3BlIjpbXSwiaWQiOjc2MjM1LCJleHAiOjE1NjI1NzI4MDQsImF1dGhvcml0aWVzIjoiQUdFTlQiLCJvcmdJZCI6InNvdXJjZWNsZWFyLTE5MjciLCJqdGkiOiI1ZDFkMWMzOS05Yjk1LTQxYWItOGU4Zi04ZGQ2NmQ0YTg2N2IiLCJjbGllbnRfaWQiOiIifQ.jhkXl6LhUai2jfqTr70kYjaeCpzeGoG83DXScBtbHa2vc9z7kntSFud7H9ObL-Uxsi3rz_TSQJ5GX6rlcs-SLZjja-1nfb7kK6pBBd0ywVuwzLRVHh__VTbrCr2BXTHJ6RZ03_Hio2nh_dno4bH0P-2pgF4wmD2W_4t5jHmKh9Y" // required field
+}
+
+./gradlew srcclr
+
 apply plugin: 'java'
 
 repositories {
