@@ -25,7 +25,7 @@ dependencies {
     compile group: 'org.keycloak', name: 'keycloak-saml-core', version: '4.5.0.Final'
     compile group: 'org.mindrot', name: 'jbcrypt', version: '0.4'
     compile group: 'org.neo4j', name: 'neo4j-jmx', version: '3.0.0-M05'
-    compile group: 'org.springframework', name: 'spring-web', version: '4.2.1.RELEASE'
+    compile group: 'org.springframework', name: 'spring-web', version: '4.3.20.RELEASE'
 }
 
 defaultTasks 'build'
