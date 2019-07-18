@@ -26,6 +26,7 @@ dependencies {
     compile group: 'org.mindrot', name: 'jbcrypt', version: '0.4'
     compile group: 'org.neo4j', name: 'neo4j-jmx', version: '3.0.0-M05'
     compile group: 'org.springframework', name: 'spring-web', version: '4.3.20.RELEASE'
+    compile ('com.fasterxml.jackson.core:jackson-databind:2.9.9.1') {force = true}
 }
 
 defaultTasks 'build'
