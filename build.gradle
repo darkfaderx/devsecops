@@ -21,7 +21,7 @@ dependencies {
     compile group: 'org.apache.kafka', name: 'kafka-clients', version: '2.0.1'
     compile group: 'org.apache.sling', name: 'org.apache.sling.api', version: '2.2.2'
     compile group: 'org.apache.sling', name: 'org.apache.sling.engine', version: '2.4.6'
-    compile group: 'org.apache.zookeeper', name: 'zookeeper', version: '3.5.4-beta'
+    compile group: 'org.apache.zookeeper', name: 'zookeeper', version: '3.5.5'
     compile group: 'org.keycloak', name: 'keycloak-saml-core', version: '4.5.0.Final'
     compile group: 'org.mindrot', name: 'jbcrypt', version: '0.4'
     compile group: 'org.neo4j', name: 'neo4j-jmx', version: '3.0.0-M05'
